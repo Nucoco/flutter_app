@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/book_list_page.dart';
 import 'package:provider/provider.dart';
 
 import 'main_model.dart';
@@ -35,7 +36,10 @@ class MyApp extends StatelessWidget {
                         'botton',
                       ),
                       onPressed: (){
-                        model.changeKboyText();
+                        Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => BookListPgae()),
+                      );
                       },
                     )
                   ],
